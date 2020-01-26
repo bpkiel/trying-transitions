@@ -1,0 +1,63 @@
+
+/* Issues:
+
+1. Can't make transitions work when switching classes
+
+2. When using an ID, the ID styles will override anything you want
+to transition
+
+ */
+
+
+
+/* header before and after hover */
+.normal {
+  color: red;
+  height: 50px;
+  transition: color 2s, margin-left 4s;
+}
+
+.normal:hover {
+  margin-left: 50px;
+  color: blue;
+}
+
+/* button before and after click */
+
+.unclicked-btn {
+  background-color: lightcyan;
+  height: 100px;
+  width: 100px;
+  /*transition: background-color 1s, height 5s, width 5s;*/
+
+}
+
+.clicked-btn {
+  background-color: green;
+  color: white;
+  height: 200px;
+  width: 200px;
+  transition: all 3s;
+}
+
+/*div before and after mousedown*/
+
+.test-div{
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  color: orange;
+  vertical-align: middle;
+  line-height: 90px;
+  transition: opacity 5s, margin-left 4s, font-weight 3s, color 2s;
+  padding: 0 10px;
+}
+
+.change {
+  color: green;
+  font-weight: bold;
+  margin-left: 100px;
+  background-color: lightsalmon;
+  opacity: 0;
+}
